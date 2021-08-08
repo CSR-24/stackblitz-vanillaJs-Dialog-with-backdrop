@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <link rel="stylesheet" type="text/css" href="styles.css"> -->
+  </head>
+  <body>
+    <html>
+      <head>
+        <link rel="stylesheet" type="text/css" href="styles.css" />
+      </head>
+      <body>
+        <div class="container">
+          <p>Click the button for the dialog to open with backdrop!</p>
+          <div class="footer">
+            <button onclick="btnClickHandler()">Click!</button>
+          </div>
+        </div>
+        <div id="backdropMain" class="backdrop hide"></div>
+        <div id="dialogContainer" class="hide">
+          <div id="confirmDialog" class="dialog">
+            <p>This is a dialog</p>
+            <div>
+              <button onclick="cancelBtnClickHandler()">Cancel</button>
+              <button onclick="confirmBtnClickHandler()">Confirm</button>
+            </div>
+          </div>
+        </div>
+        <script src="script.js"></script>
+      </body>
+    </html>
+  </body>
+</html>

@@ -1,0 +1,91 @@
+.container {
+  background-color: #000000;
+  width: 350px;
+  height: 100px;
+  padding: 10px;
+  font-size: 12px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 0.7;
+  color: white;
+}
+
+button {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-weight: bold;
+  color: blue;
+}
+
+.footer {
+  display: flex;
+  flex-flow: row-reverse;
+}
+
+body {
+  background-image: url('https://images.unsplash.com/photo-1439396874305-9a6ba25de6c6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1790&q=80');
+}
+
+.backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  opacity: 0.5;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.dialog {
+  width: 350px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  opacity: 1;
+  padding: 1em;
+  z-index: 2;
+}
+
+.hide {
+  visibility: hidden;
+}
+
+#dialogContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog > p {
+  font-size: 12px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.dialog > div {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.dialog > div > button {
+  margin-left: 10px;
+}
