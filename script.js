@@ -2,6 +2,7 @@ function confirmBtnClickHandler() {
   displayBackdrop(false);
   displayDialog(false);
 }
+
 function cancelBtnClickHandler() {
   displayBackdrop(false);
   displayDialog(false);
